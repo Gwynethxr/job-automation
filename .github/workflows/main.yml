@@ -1,7 +1,10 @@
 name: Job Scraper Test
 
 on:
+  schedule:
+    - cron: "0 4 * * *"  # 11:00 WIB
   workflow_dispatch:
+
 
 jobs:
   run:
